@@ -1,0 +1,23 @@
+/usr/local/lib/python3.12/dist-packages/torch/__init__.py:1146: FutureWarning: `torch.distributed.reduce_op` is deprecated, please use `torch.distributed.ReduceOp` instead
+  return isinstance(obj, torch.Tensor)
+<run_flexllmgen>: args.model: facebook/opt-1.3b
+model size: 2.443 GB, cache size: 0.422 GB, hidden size (prefill): 0.009 GB
+init weight...
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Paris is the capital city of France. It is the most populous city in France, with an estimated population of
+----------------------------------------------------------------------
+15: Paris is the capital city of France. It is the most populous city in France, with an estimated population of
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 0.0089 GB,  peak_mem: 1.0510 GB
+TorchDevice: cpu
+  cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+model size: 2.443 GB	cache size: 0.422 GB	hidden size (p): 0.009 GB
+peak gpu mem: 1.051 GB	projected: False
+prefill latency: 11.258 s	prefill throughput: 181.912 token/s
+decode latency: 168.087 s	decode throughput: 1.428 token/s
+total latency: 179.345 s	total throughput: 1.427 token/s
