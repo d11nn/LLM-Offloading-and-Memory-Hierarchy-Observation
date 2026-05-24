@@ -1,0 +1,21 @@
+<run_flexllmgen>: args.model: facebook/opt-1.3b
+model size: 2.443 GB, cache size: 0.105 GB, hidden size (prefill): 0.002 GB
+init weight...
+warmup - generate
+benchmark - generate
+Outputs:
+----------------------------------------------------------------------
+0: Paris is the capital city of France. It is the most populous city in France, with an estimated population of
+----------------------------------------------------------------------
+3: Paris is the capital city of France. It is the most populous city in France, with an estimated population of
+----------------------------------------------------------------------
+
+TorchDevice: cuda:0
+  cur_mem: 2.6505 GB,  peak_mem: 2.8060 GB
+TorchDevice: cpu
+  cur_mem: 0.0000 GB,  peak_mem: 0.0000 GB
+model size: 2.443 GB	cache size: 0.105 GB	hidden size (p): 0.002 GB
+peak gpu mem: 2.806 GB	projected: False
+prefill latency: 0.091 s	prefill throughput: 5634.768 token/s
+decode latency: 0.261 s	decode throughput: 230.025 token/s
+total latency: 0.352 s	total throughput: 181.971 token/s
